@@ -11,23 +11,9 @@ $font-color: #010041;
 $box-shadow: 0 2px 10 px 0 rgba(0,0,0,0.6);
 
 $limit:10;
-$unit 8px;
+$unit: 8;
 @function size($value){
     @return $value*$unit
-}
-@mixin btn($background-color, $color, $bold){
-    background-color: $background-color;
-    color:$colorborder-radius:50px;
-    padding: 20px 3px
-    text-align:center;
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-
-
-    @if($bold = 'true'){
-        font-weight:bolder;
-    }
 }
 
 * 
@@ -37,7 +23,7 @@ $unit 8px;
 }
 body{
     background-color: $primary-color
-    font-family: josefina sans;
+    font-family josefina sans;
 
 }
 a{
@@ -47,42 +33,41 @@ a{
 }
 //Titulos
 h2{
-    weight:bolder;
+    height:bolder;
     font-size: size(6);
 }
 .container{
     background-color:white;
-    margin 100 px auto;
-    width:1280px;
-    padding:50px;
+    margin: 100px auto;
+    width: 1280px;
+    padding: 50px;
     box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
     
     background-image: url(./src/img/creatividad.png)
-    background-size: 100% 100%;
+    background-size 100% 100%;
 
 
 }
 ul{
-    padding:0;
-    margin:0;
-    list-style:none;
-    display:flex;
-    gap:20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
     li{
         a{
-           @include btn:($background-color: $primary-color,$color: $secundary-color, 
+           @include btn($background-color: $primary-color,$color: $secundary-color, 
             $bold: 'true');
         }
     }
 }
-// centrar elementos de pantalla
+
 %flex
 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-//Ocupar el 100% del viewport
 header
 {
     display: flex;
