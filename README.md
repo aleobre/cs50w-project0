@@ -1,3 +1,4 @@
 # Project 0
 
-Web Programming with Python and JavaScript
+En mi proyecto hablo un poco sobre mi, para el diseño he tomado inspiracion de pinterest y youtube
+
