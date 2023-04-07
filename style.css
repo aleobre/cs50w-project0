@@ -1,0 +1,46 @@
+.body {
+  background: #010041;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  width: 90%;
+}
+
+.header {
+  background-color: #B9B9B9;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.nav_item {
+  background: #F4D03F;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+#nombre {
+  font-family: josefina sans;
+  font-size: 0.9rem;
+  color: black;
+  text-decoration: none;
+  margin-left: 5rem;
+}
+
+.img {
+  width: 10px;
+  height: 10px;
+}/*# sourceMappingURL=style.css.map */
