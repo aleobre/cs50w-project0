@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-
-nav .lista {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+$fuente: josefina sans;
+//a
 .body{
-    background: #010041;
+    background: #010114;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -21,53 +16,42 @@ nav .lista {
     text-align: center;
     width: 90%;
 }
-header {
-	display: flex;
-	width: 100vw;
-	height: 80px;
-	position: fixed;
-	background-color: rgb(34, 31, 31);
-	z-index: 1;
-	justify-content: space-between;
-	align-items: center;
+.header {
+    background-color: #B9B9B9;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
 }
-
-nav .lista {
-	flex-direction: row;
-	width: 60vw;
-	height: 80px;
-	justify-content: space-evenly;
-}
-
 .nav-item {
 	list-style: none;
 }
-
 .nav-item>a {
-	font-family: "josefina sans";
+	font-family: $fuente;
 	text-decoration: none;
 	color: #000;
 }
-
 .nav-item:hover>a {
-	color: rgb(1, 1, 61);
+    background:#F4D03F;
+    display:inline-block;
+    color:#fff;
+    padding: 10px 30px;
+    text-decoration:none;
 }
 
-#nombre {
-	font-family: "Josefina Sans", cursive;
-	font-size: 0.9rem;
-	color: #000;
-	text-decoration: none;
-	margin-left: 5rem;
+#nombre
+{
+    font-family: $fuente;
+    font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
+    margin-left: 5rem;
 }
-
 .nav-toggle {
 	display: none;
 	border: none;
 	background-color: transparent;
 }
-
-
 footer {
 	display: flex;
 	flex-direction: column;
@@ -86,10 +70,9 @@ footer {
 footer a {
 	font-size: 30px;
 	text-decoration: none;
-	color: rgb(12, 6, 22);
+	color: #000;
 	padding: 4%;
 }
-
 .contact
 {
 	display: flex;
@@ -97,7 +80,6 @@ footer a {
 	justify-content: center;
 	height: 85vh;
 }
-
 .img-contact {
 	width: 60%;
 	height: 60%;
@@ -110,29 +92,6 @@ footer a {
 	justify-content: center;
 	align-items: center;
 }
-.form-contact > input, textarea {
-	width: 80%;
-	height: 50px;
-	margin-bottom: 10px;
-	font-size: 15px;
-	text-align: center;
-	border-radius: 20px;
-	border: double 2px transparent;
-	background-image: linear-gradient(white, white), linear-gradient(to left, #160d24, #faea57);
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-} 
-
-.form-contact > textarea
-{
-	height: 100px;
-}
-.form-contact input[type="submit"]
-{
-	width: 20%;
-	border: double 4px transparent;
-}
-
 .inicio-css {
 	display: flex;
 	align-items: center;
@@ -166,8 +125,8 @@ footer a {
 }
 .text-home > h3, .text-home > p
 {
-	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 19px;
+	font-family: $fuente;
+	font-size: 19px ;
 	color: black;
 }
 .text-home > h3
@@ -183,20 +142,15 @@ footer a {
 {
 	padding-top: 20px;
 }
-.col
-{
-	margin-top: 10px;
-}
-
 #contact-me-css
 {
 	width: 140px;
 	height: 45px;
-	background-color: #d9d9d988;
+	background-color: #6a6d99cc;
 	border: none;
 	border-radius: 15px;
 	text-transform: uppercase;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: $fuente;
 	font-weight: 800;
 	margin-top: 20px;
 }
@@ -229,14 +183,10 @@ footer a {
 }
 .about-me-text > p
 {
-
-	font-family: var(--fuente-pop);
+	font-family: $fuente;
 	font-size: 16px;
-	color: var(--black);
+	color: black;
 }
-
-
-
 @media screen and (max-width: 800px)
 {
 	.pag-principal
@@ -254,6 +204,7 @@ footer a {
 		padding-top: 40px;
 	}
 }
+
 
 @media screen and (max-width: 768px) {
 	#nombre{
@@ -287,16 +238,13 @@ footer a {
 	.visible-m {
         left: 0;
     }
-
 	.nav-item {
 		list-style: none;
 	}
-
 	.nav-item>a {
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-family: $fuente;
 		text-decoration: none;
 	}
-
 	.nav-toggle {
 		display: block;
 		position: absolute;
@@ -307,6 +255,7 @@ footer a {
 		cursor: pointer;
 	}
 	
+
 	.contact
 	{
 		flex-direction: column;
@@ -324,7 +273,7 @@ footer a {
 	{
 		width: 40%;
 	}
-
+	
 	.about-me
 	{
 		flex-direction: column;
@@ -340,61 +289,8 @@ footer a {
 	}
 	.about-me-text > p
 	{
-
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-family: $fuente;
 		font-size: 16px;
 		color: black;
 	}
-
 }
-=======
-
-$fuente: josefina sans;
-//a
-.body{
-    background: #010041;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 0;
-    text-align: left;
-}
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    width: 90%;
-}
-.header {
-    background-color: #B9B9B9;
-    color: #fff;
-    margin-bottom: 2rem;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-.nav_item
-{
-    background:#F4D03F;
-    display:inline-block;
-    color:#fff;
-    padding: 10px 30px;
-    text-decoration:none;
-}
-#nombre
-{
-    font-family: $fuente;
-    font-size: 0.9rem;
-    color: black;
-    text-decoration: none;
-    margin-left: 5rem;
-}
-.img{
-        width: 10px;
-        height: 10px;
-}
-
-
-
->>>>>>> db715ef6124d9c11e2a573e972c0fdde083b841b
