@@ -1,4 +1,6 @@
 # Project 0
 
-En mi proyecto hablo un poco sobre mi, para el diseño he tomado inspiracion de pinterest y youtube
+El sitio está desarrollado con HTML, CSS Y BOOTSTRAP
+En el puede encontrar informacion sobre mi vida academica, mis gustos y pasatiempos
+en el diseño tome inspiracion de algunos pines de pinterest. Ademas, de tutoriales de youtube 
 
