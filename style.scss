@@ -1,300 +1,179 @@
-$fuente: josefina sans;
-//a
-* {
-	padding: 0;
-	margin: 0;
-  }
-.body{
-    background: #04043a;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+$fuente : arial;
+$color-letra: black;
+$color: #8DC0C2;
+
+//estilo global
+* 
+{
     margin: 0;
-    text-align: left;
-}
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    width: 90%;
-}
-.header {
-    background-color: #B9B9B9;
-    color: #fff;
-    margin-bottom: 2rem;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-.nav-item {
-	list-style: none;
-}
-.nav-item>a {
-	font-family: $fuente;
-	text-decoration: none;
-	color: #000;
-}
-.nav-item:hover>a {
-    background:#F4D03F;
-    display:inline-block;
-    color:#fff;
-    padding: 10px 30px;
-    text-decoration:none;
+    padding: 0;
 }
 
+
+
+// Centrar elementos en la pantalla
+%flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//viewport
+header
+{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+	color:$color;
+}
+
+//NAV
+nav
+{
+    ul
+    {
+        @extend %flex;
+        flex-direction: row;
+        width: 60vw;
+        height: 80px;
+        justify-content: space-evenly;
+    }
+}
+.nav-item
+{
+    list-style: none;
+    & > a
+    {
+        font-family: $fuente;
+        text-decoration: none;
+        color: $color-letra;
+
+    }
+}
+
+.nav-item:hover
+{
+    & > a
+    {
+        color: gray;
+    }
+}
+//INDEX
+
+.nav-toggle
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(-100%, 60%);
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.img-inicio{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 10px;
+	border: 5px solid $skyblue;
+	box-shadow: 2px 2px 5px $dark-grey;
+	padding: 2px;
+}
+.pag-principal{
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.h4{
+	color: $color-letra
+
+}
+//acerca de mi
+.about-me-text{
+
+	padding: 30px;
+    text-align: center;
+	justify-content: center;
+	display: flex;
+
+
+	img{
+        width: 300px;
+        padding: 20px;
+    }
+}
 #nombre
 {
-    font-family: $fuente;
+    font-family: $fuente-logo;
     font-size: 0.9rem;
-    color: black;
+    color: $letra-color;
     text-decoration: none;
     margin-left: 5rem;
 }
-.nav-toggle {
-	display: none;
-	border: none;
-	background-color: transparent;
-}
-footer {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 80px;
-	justify-content: center;
-	align-items: center;
-	bottom: 0;
+
+
+//hobbie
+.pasatiempo{
 	text-align: center;
-}
-.social-media
-{
-	width: 100%;
-	margin-bottom: 10px;
-}
-footer a {
-	font-size: 30px;
-	text-decoration: none;
-	color: #000;
-	padding: 4%;
-}
-.contact
-{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 85vh;
-}
-.img-contact {
-	width: 60%;
-	height: 60%;
-}
-.form-contact {
-	width: 38%;
-	height: 60%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.inicio-css {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-.pag-principal
-{
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	width: 100%;
-}
-#img-inicio
-{	
-	width: 80%;
-	height: 80%;
-}
-.text-home
-{
-	padding-top: 10%;
-	width: 50%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-}
-.text-home > h3, .text-home > p
-{
-	font-family: $fuente;
-	font-size: 19px ;
-	color: black;
-}
-.text-home > h3
-{
-	font-weight: 1000;
-}
-.project
-{
-	width: 100%;
-	text-align: center;
-}
-.row
-{
-	padding-top: 20px;
-}
-#contact-me-css
-{
-	width: 140px;
-	height: 45px;
-	background-color: #6a6d99cc;
-	border: none;
-	border-radius: 15px;
-	text-transform: uppercase;
-	font-family: $fuente;
-	font-weight: 800;
-	margin-top: 20px;
-}
+    padding: 30px 50px;
+    margin: 0;
 
-.about
-{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 100vh;
-	width: 100%;
-	padding-top: 5%;
-	
-}
-.about-me
-{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 85%;
-	width: 90%;
-}
-.about-me > img
-{
-	margin: 50px;
-	width: 50%;
-	height: 50%;
-	border-radius: 50%;
-}
-.about-me-text > p
-{
-	font-family: $fuente;
-	font-size: 16px;
-	color: black;
-}
-@media screen and (max-width: 800px)
-{
-	.pag-principal
-	{
-		flex-direction: column;
-		height: 65vh;
-	}
-	#img-inicio
-	{
-		width: 60%;
-		height: 50%;
-	}
-	.inicio-css
-	{
-		padding-top: 40px;
-	}
-}
-
-
-@media screen and (max-width: 768px) {
-	#nombre{
-		display: none;
-	}
-	header {
-		height: 70px;
-	}
-	nav .lista {
-		width: 100%;
-        height: 40vh;
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
-	.lista 
-	{
-		
-		display: none;
-		z-index: 2;
-		position: fixed;
-		background-color: white;
-		left: 0;
-		top: 60px;
-        padding: 20px 0;
-        overflow-y: auto;
-        left: 100%;
-        transition: left 0.3s;
-        z-index: 2;
-        position: absolute;
-	}
-	.visible-m {
-        left: 0;
+    img{
+        width: 50%;
+        max-width: 520px;
+        height: auto;
+        object-fit: contain;
     }
-	.nav-item {
-		list-style: none;
-	}
-	.nav-item>a {
-		font-family: $fuente;
-		text-decoration: none;
-	}
-	.nav-toggle {
-		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
-		transform: translate(-100%, 60%);
-		font-size: 1.8rem;
-		cursor: pointer;
-	}
-	
-
-	.contact
-	{
-		flex-direction: column;
-		height: 80vh;
-		width: 100%;
-	}
-	.contact > .img-contact
-	{
-		display: none;
-	}
-	.form-contact {
-		width: 70%;
-	}
-	.form-contact input[type="submit"]
-	{
-		width: 40%;
-	}
-	
-	.about-me
-	{
-		flex-direction: column;
-		justify-content: center;
-		height: 60%;
-	}
-	.about-me > img
-	{
-		margin: 20px;
-		width: 50%;
-		height: 50%;
-		border-radius: 50%;
-	}
-	.about-me-text > p
-	{
-		font-family: $fuente;
-		font-size: 16px;
-		color: black;
-	}
 }
+
+.nav-toggle
+    {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+		display: none;
+    }
+
+
+	@media screen and (max-width: 768px)
+{
+    .navbar-list
+    {
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        li{
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    nav
+    {
+        ul
+        {
+            @extend %flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 80px;
+            justify-content: space-between;
+        }
+    }
+	
+	footer{
+		padding: 20px;
+		text-align: center;
+		background-color: black
+		align-items: center;
+
+	}
